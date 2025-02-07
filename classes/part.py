@@ -38,3 +38,13 @@ class Ship:
         else:
             self.__parts[part_name].change_material(new_material)
             print(f"Le matériau de {part_name} a été changé en {new_material}.")
+            
+class Racingship(ship):
+    def __init__(self, name, max_speed):
+        super().__init__(name)
+        self.max_speed = max_speed
+        
+    def display_speed(self):
+        print(f"La vitesse maximale de {self.name} est {self.max_speed} km/h.")
+        
+
