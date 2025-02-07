@@ -16,8 +16,8 @@ def main():
     bateau.add_part(Part("Canon", "acier"))
 
     while True:
-        menu()  
-        choix = input("Votre choix : ") 
+        menu()  # ✅ Afficher le menu à chaque tour
+        choix = input("Votre choix : ")  # ✅ Demander le choix de l'utilisateur
 
         if choix == "1":
             bateau.display_state()
@@ -34,7 +34,7 @@ def main():
             part_name = input("Nom de la pièce dont vous voulez modifier le matériau : ")
             new_material = input("Nouveau matériau : ")
             bateau.change_part(part_name, new_material)
-            bateau.add_history(f"Changement du matériau de {part_name} à {new_material}")
+            bateau.add_history(f"Changement du matériau de {part_name} en {new_material}")
 
         elif choix == "4":
             bateau.display_speed()
