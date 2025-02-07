@@ -10,6 +10,7 @@ class Part:
         return f"{self.name} est fait de {self.material}"
 
 
+
 class Ship:
     def __init__(self, name):
         self.name = name

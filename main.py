@@ -35,7 +35,7 @@ def main():
             new_material = input("Nouveau matériau : ")
             bateau.change_part(part_name, new_material)
             bateau.add_history(f"Changement du matériau de {part_name} en {new_material}")
-
+ 
         elif choix == "4":
             bateau.display_speed()
 
@@ -48,6 +48,7 @@ def main():
 
         else:
             print("Choix invalide. Veuillez entrer un nombre entre 1 et 6.")
-
+ 
+ 
 if __name__ == "__main__":
     main()
