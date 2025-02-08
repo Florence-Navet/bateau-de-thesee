@@ -45,7 +45,7 @@ class Racingship(Ship):
     def __init__(self, name, max_speed):
         super().__init__(name)
         self.max_speed = max_speed
-        self.history = []  # ✅ Ajout d'un historique
+        self.history = []
         
     def display_speed(self):
 

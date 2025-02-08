@@ -16,8 +16,8 @@ def main():
     bateau.add_part(Part("Canon", "acier"))
 
     while True:
-        menu()  # ✅ Afficher le menu à chaque tour
-        choix = input("Votre choix : ")  # ✅ Demander le choix de l'utilisateur
+        menu()  # 
+        choix = input("Votre choix : ")  
 
         if choix == "1":
             bateau.display_state()
